@@ -1,3 +1,3 @@
 # newcoder
 This repository records some code about &lt;剑指 offer>, on newcoder.com.
-2019.08.07 数组中的逆序对.py
+\n2019.08.07 数组中的逆序对.py
