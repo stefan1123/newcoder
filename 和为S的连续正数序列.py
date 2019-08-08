@@ -38,6 +38,31 @@ class Solution:
                 curSum -= small
                 small += 1
         return res
+    
+#        # 方法二：一样的思想，不同的写法
+#        if tsum<3:
+#            return []
+#        elif tsum==  3:
+#            return [[1,2]] # 一个序列也要是[[],] 格式
+#        small,big=1,2
+#        res = []
+#        onepath = []
+#        onepath.append(small)
+#        onepath.append(big)
+#        # 序列至少两个数字
+#        while len(onepath)>=2:
+#            if sum(onepath)<tsum:
+#                onepath.append(onepath[-1]+1)
+#                #continue
+#            elif sum(onepath)>tsum:
+#                onepath.pop(0)
+#            else:
+##!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!     第二次犯错了  !!!!!!!!!!!!!!!!!!!
+#                # 复制链表一定要用onepath[:],而不能是onepath
+#                # res.append(onepath)
+#                res.append(onepath[:])
+#                onepath.pop(0)
+#        return res
 
         
         
